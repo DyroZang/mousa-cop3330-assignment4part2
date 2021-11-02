@@ -1,0 +1,15 @@
+@startuml
+class ucf.assignments.TDList {
+- String title
+~ ObservableList<ListItem> list
++ String getTitle()
++ void setTitle(String)
++ void delItem(String)
++ void addItem(String,String,Boolean)
++ void editDesc(ListItem,String)
++ void editDate(ListItem,String)
++ void editComplete(ListItem,Boolean)
++ void saveList(String)
++ void loadList(String)
+}
+@enduml

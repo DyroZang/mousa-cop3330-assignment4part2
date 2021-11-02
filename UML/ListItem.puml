@@ -1,0 +1,15 @@
+@startuml
+class ucf.assignments.ListItem {
+- Boolean completed
+- String description
+- String date
+~ String[] months
++ boolean isState()
++ String getDescription()
++ String getDate()
++ void delete()
++ void setCompleted(Boolean)
++ void setDescription(String)
++ void setDate(String)
+}
+@enduml
