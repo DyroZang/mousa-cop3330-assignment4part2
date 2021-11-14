@@ -3,8 +3,7 @@ class ucf.assignments.ListItem {
 - Boolean completed
 - String description
 - String date
-~ String[] months
-+ boolean isState()
++ boolean isCompleted()
 + String getDescription()
 + String getDate()
 + void delete()

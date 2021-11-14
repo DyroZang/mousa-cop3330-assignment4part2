@@ -8,7 +8,7 @@ package ucf.assignments;
 public class ListItem{
     //Object variables
     //File path for internal and external storage
-    private Boolean completed = false;
+    private String completed = "false";
     private String description;
     private String date = "YYYY-MM-DD";
 
@@ -18,7 +18,7 @@ public class ListItem{
             "Sep", "Oct", "Nov", "Dec"
     };
 
-    public ListItem(String text, String duedate, boolean completed){
+    public ListItem(String text, String duedate, String completed){
         //Constructor function
         //Creates the object vars
         this.completed = completed;
@@ -26,7 +26,7 @@ public class ListItem{
         this.date = duedate;
     }
 
-    public boolean isCompleted() {
+    public String isCompleted() {
         return completed;
     }
 
@@ -44,7 +44,7 @@ public class ListItem{
 
     }
 
-    public void setCompleted(Boolean completed) {
+    public void setCompleted(String completed) {
         this.completed = completed;
     }
 

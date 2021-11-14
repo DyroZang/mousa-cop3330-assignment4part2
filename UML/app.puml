@@ -1,0 +1,11 @@
+@startuml
+class ucf.assignments.app {
+- TableView<ListItem> table
+- TableView<ListItem> holder
++public void start
+
+}
+
+
+
+@enduml
